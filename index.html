@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Wahda Private School | Alignment with SPEA Strategic Goals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom styles for active tab */
+        .tab-active {
+            border-color: #2563eb; /* blue-600 */
+            color: #2563eb;
+            background-color: #eff6ff; /* blue-50 */
+        }
+        /* Hide content by default */
+        .tab-content {
+            display: none;
+        }
+        .tab-content-active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                 <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Al Wahda Private School</h1>
+                 <button id="add-resource-btn" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 flex items-center shadow-md">
+                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                     Add Resource
+                 </button>
+            </div>
+            <p class="mt-2 text-lg sm:text-xl text-gray-600">Our Contribution to the SPEA Strategic Goals</p>
+        </header>
+
+        <div class="bg-white rounded-2xl shadow-lg">
+            <!-- Tab Navigation -->
+            <div class="border-b border-gray-200">
+                <nav class="-mb-px flex space-x-1 sm:space-x-4 overflow-x-auto p-2" aria-label="Tabs" id="tab-buttons">
+                    <!-- Tab buttons will be dynamically checked for active state -->
+                    <button data-tab="1" class="tab-button tab-active whitespace-nowrap py-3 px-4 border-b-4 font-semibold text-sm sm:text-base rounded-t-lg hover:bg-blue-50 transition-colors duration-200">Global Ranking</button>
+                    <button data-tab="2" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Competitiveness</button>
+                    <button data-tab="3" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Action Research</button>
+                    <button data-tab="4" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Emirati Students</button>
+                    <button data-tab="5" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Early Years</button>
+                    <button data-tab="6" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Future Skills</button>
+                    <button data-tab="7" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Teacher Performance</button>
+                    <button data-tab="8" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Quality of Education</button>
+                    <button data-tab="9" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Inclusion</button>
+                    <button data-tab="10" class="tab-button whitespace-nowrap py-3 px-4 border-b-4 border-transparent font-semibold text-sm sm:text-base text-gray-500 rounded-t-lg hover:bg-gray-100 transition-colors duration-200">Community Projects</button>
+                </nav>
+            </div>
+
+            <!-- Tab Content Panels -->
+            <div id="tab-content-panels" class="p-6 sm:p-8">
+
+                <!-- Goal 1: Global Ranking -->
+                <div id="tab-content-1" class="tab-content tab-content-active">
+                    <h2 class="text-xl sm:text-2xl font-bold text-blue-700">1. Top 20 Global Ranking in Benchmark Assessments</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">We recognize that Sharjah's global ranking is built on the performance of individual schools. At Al Wahda, we are committed to excellence in international assessments like CAT4, MAP, PISA, TIMSS, and PIRLS by embedding the required skills across our curriculum.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg><span><b>Data Analysis:</b> Trend data from international assessments showing year-on-year improvement.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg><span><b>Curriculum Mapping:</b> Explicit mapping of assessment skills and adaptations in curriculum plans.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg><span><b>Targeted Interventions:</b> Support and enrichment programs based on data.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                            <img src="https://placehold.co/600x400/EBF4FF/3B82F6?text=Global+Excellence" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Goal 2: Competitiveness -->
+                <div id="tab-content-2" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-green-700">2. 50% Advancement in Sharjah’s Competitiveness Index</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">Our school's continuous improvement directly enhances Sharjah's overall competitiveness. We focus on innovation, stakeholder satisfaction, and developing a unique value proposition that attracts and retains families.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg><span><b>School Improvement Plan (SIP):</b> Clear link between our priorities and competitiveness.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h6l2-2h2l-2 2z"></path></svg><span><b>Parent/Student Surveys:</b> High satisfaction rates and documented actions on feedback.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg><span><b>Accreditations & Awards:</b> External validation of our quality and innovation.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/F0FDF4/22C55E?text=Innovation" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 3: Action Research -->
+                <div id="tab-content-3" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-purple-700">3. 85% of Schools Participate in Action Research</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">We foster a culture of professional inquiry. Our teachers are not just instructors; they are reflective practitioners who actively engage in action research to improve their teaching and enhance student outcomes.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-purple-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547a2 2 0 01-1.022.547l-2.387.477a6 6 0 01-3.86-.517l-.318-.158a6 6 0 00-3.86-.517L-1.95 15.21a2 2 0 01-1.806-.547a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L-13.95 15.21a2 2 0 01-1.806-.547"></path><path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547a2 2 0 01-1.022.547l-2.387.477a6 6 0 01-3.86-.517l-.318-.158a6 6 0 00-3.86-.517L-1.95 15.21a2 2 0 01-1.806-.547a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L-13.95 15.21a2 2 0 01-1.806-.547" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><span><b>Action Research Portfolio:</b> Examples of teacher-led research projects and their findings.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-purple-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg><span><b>Professional Learning Communities (PLCs):</b> Structure and minutes showing research discussions.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-purple-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg><span><b>HP IDEA Program Graduate:</b> Successfully completed the HP IDEA program, conducting research on the ethical use of AI in education and developing school-wide policies to ensure students use AI intuitively while achieving learning objectives.</span></li>
+                                <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-purple-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg><span><b>Impact on Policy:</b> Evidence of research leading to changes in teaching practices.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/F5F3FF/8B5CF6?text=AI+in+Education" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 4: Emirati Students -->
+                <div id="tab-content-4" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-red-700">4. 100% of Emirati Students Receive "Good" or Better Education</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">We are deeply committed to nurturing our Emirati students to become future leaders. We provide tailored academic, cultural, and pastoral support to ensure every Emirati student is progressing and thriving.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" /></svg><span><b>Data Tracking:</b> Anonymized progress and attainment data for Emirati student cohorts.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" /></svg><span><b>Individualized Support:</b> Examples of Individual Learning Plans (ILPs).</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-red-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A11.953 11.953 0 0012 13.5c2.998 0 5.74 1.1 7.843 2.918m-15.686 0A8.959 8.959 0 003 12c0-.778.099-1.533.284-2.253m18.132 4.506A11.953 11.953 0 0112 16.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0l-.284 2.253m0 0l2.253-.284" /></svg><span><b>Cultural Programs:</b> Photos and videos from National Day, heritage fairs, and language events.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/FEF2F2/DC2626?text=Emirati+Success" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Goal 5: Early Years -->
+                <div id="tab-content-5" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-yellow-600">5. 100% of Nurseries Receive "Good" or Better Care and Education</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">Our Early Years department provides a safe, stimulating, and caring environment rooted in best practices, ensuring a strong foundation for lifelong learning for our youngest students.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-yellow-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" /></svg><span><b>Learning Environment:</b> Photo portfolio or video tour of our child-led learning stations.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-yellow-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" /></svg><span><b>Observation & Assessment:</b> Examples of developmental tracking using tools like SeeSaw.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-yellow-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.228a4.5 4.5 0 00-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487M16.863 4.487L19.5 7.125" /></svg><span><b>Parent Partnerships:</b> Photos from parent workshops and "stay and play" sessions.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/FFFBEB/CA8A04?text=Early+Learning" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 6: Future Skills -->
+                <div id="tab-content-6" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-indigo-700">6. 80% Improvement in Future Skills for Graduates</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">We are consciously shifting from a content-based curriculum to a skills-based one, equipping students with critical thinking, communication, collaboration, and creativity skills essential for the future.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z" /></svg><span><b>Project-Based Learning (PBL):</b> Portfolios of outstanding PBL units solving real-world problems.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18h3m-3-18v18" /></svg><span><b>Extracurricular Activities:</b> Information on Debate Club, MUN, Coding, and Entrepreneurship fairs.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-indigo-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" /></svg><span><b>Student Portfolios:</b> Senior students ready to present portfolios demonstrating skill development.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/EEF2FF/4F46E5?text=Future+Ready" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 7: Teacher Performance -->
+                <div id="tab-content-7" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-pink-700">7. 100% Improvement in Teacher Performance</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">We believe that the quality of the teacher is the most important factor in student success. We have a robust, data-informed professional development program linked to our strategic priorities.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-pink-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0h18" /></svg><span><b>Professional Development Calendar:</b> Comprehensive calendar of internal and external training.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-pink-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" /></svg><span><b>Impact Analysis:</b> Data showing how professional development has improved teaching and learning.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-pink-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-4.67c.625-.926 1-2.036 1-3.172v-.003Z" /></svg><span><b>Peer Observation Program:</b> System for collaborative and non-judgmental peer coaching.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/FDF2F8/DB2777?text=Teacher+Growth" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 8: Quality of Education -->
+                <div id="tab-content-8" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-cyan-700">8. 90% of Private Institutions Provide "Good" or Better Education</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">As an institution, we are on a continuous journey to 'Outstanding.' Our rigorous self-evaluation processes and commitment to the SPEA framework ensure we consistently meet and exceed standards.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-cyan-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg><span><b>School Self-Evaluation Form (SEF):</b> A well-written, evidence-based SEF.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-cyan-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0011.667 0l3.182-3.182m0 0v4.992m0 0h-4.992m4.992 0l-3.182-3.182a8.25 8.25 0 00-11.667 0l-3.181 3.183" /></svg><span><b>Post-Inspection Action Plan:</b> Detailed action plan addressing previous recommendations.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-cyan-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg><span><b>Internal Quality Assurance:</b> Schedule of learning walks, book scrutinies, and data meetings.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/CFFAFE/0891B2?text=Quality+Assurance" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 9: Inclusion -->
+                <div id="tab-content-9" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-orange-700">9. 100% of Institutions Support Inclusive Education</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">Inclusion is at the heart of our ethos. We are committed to providing equitable access and support for all students, including Students of Determination and Gifted & Talented students.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-orange-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg><span><b>Inclusion Policy:</b> Our comprehensive policy document.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-orange-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.228a4.5 4.5 0 00-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487M16.863 4.487L19.5 7.125" /></svg><span><b>Case Studies (Anonymized):</b> Journeys of SOD students, showing support and progress.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-orange-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0l-1.07-1.07m1.07 1.07l1.07 1.07m-1.07-1.07v1.07m1.07-1.07h-1.07m-2.14 0a50.024 50.024 0 002.14 0m11.218 0a50.024 50.024 0 01-2.14 0" /></svg><span><b>Evidence of Differentiation:</b> Lesson plans adapted for various learning needs.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/FFF7ED/C2410C?text=Every+Student" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Goal 10: Community Projects -->
+                <div id="tab-content-10" class="tab-content">
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-700">10. 500 Innovative Projects Serving the Local Community</h2>
+                    <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2">
+                            <h3 class="font-semibold text-lg text-gray-800">How Al Wahda Contributes:</h3>
+                            <p class="mt-2 text-gray-600">We believe learning should not be confined to classroom walls. Our students are active, compassionate citizens who serve and connect with our local community through innovative projects.</p>
+                            <h3 class="font-semibold text-lg text-gray-800 mt-6">Evidence to Showcase:</h3>
+                            <ul class="mt-2 space-y-3 text-gray-600 evidence-list">
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-gray-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" /></svg><span><b>Portfolio of Projects:</b> Visual presentation of community projects (environmental, charity, etc.).</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-gray-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" /></svg><span><b>Student Testimonials:</b> Students prepared to speak about their community involvement.</span></li>
+                               <li class="flex items-start"><svg class="w-5 h-5 mr-3 text-gray-500 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" /></svg><span><b>Partnerships:</b> Evidence of collaboration with local businesses or cultural centers.</span></li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-1">
+                           <img src="https://placehold.co/600x400/F3F4F6/4B5563?text=Community+Action" alt="" class="rounded-lg shadow-md w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="mt-8 added-resources-container hidden">
+                        <h3 class="font-semibold text-lg text-gray-800 border-b pb-2 mb-4">Added Resources:</h3>
+                        <div class="space-y-3 resource-items-list">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="text-center mt-8 text-sm text-gray-500">
+            <p>&copy; Al Wahda Private School. Prepared for SPEA Inspection Team.</p>
+        </footer>
+    </div>
+
+    <!-- Add Resource Modal -->
+    <div id="resource-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden z-50">
+        <div class="relative top-20 mx-auto p-5 border w-full max-w-md shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Add New Resource</h3>
+                <form id="resource-form" class="mt-2 px-7 py-3 text-left">
+                    <div class="mb-4">
+                        <label for="resource-name" class="block text-sm font-medium text-gray-700">Resource Name</label>
+                        <input type="text" id="resource-name" name="resource-name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="resource-link" class="block text-sm font-medium text-gray-700">Link (URL)</label>
+                        <input type="url" id="resource-link" name="resource-link" placeholder="https://example.com" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div class="mb-4">
+                        <label for="resource-file" class="block text-sm font-medium text-gray-700">Or Upload File</label>
+                        <input type="file" id="resource-file" name="resource-file" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                    </div>
+                    <div class="mb-6">
+                        <label for="resource-tab" class="block text-sm font-medium text-gray-700">Assign to Goal</label>
+                        <select id="resource-tab" name="resource-tab" class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
+                            <option value="1">1. Global Ranking</option>
+                            <option value="2">2. Competitiveness</option>
+                            <option value="3">3. Action Research</option>
+                            <option value="4">4. Emirati Students</option>
+                            <option value="5">5. Early Years</option>
+                            <option value="6">6. Future Skills</option>
+                            <option value="7">7. Teacher Performance</option>
+                            <option value="8">8. Quality of Education</option>
+                            <option value="9">9. Inclusion</option>
+                            <option value="10">10. Community Projects</option>
+                        </select>
+                    </div>
+                    <div class="items-center px-4 py-3">
+                        <button id="save-resource-btn" type="submit" class="w-full px-4 py-2 bg-blue-600 text-white text-base font-medium rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            Save Resource
+                        </button>
+                        <button id="cancel-resource-btn" type="button" class="mt-3 w-full px-4 py-2 bg-gray-200 text-gray-800 text-base font-medium rounded-md shadow-sm hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Tab Navigation Logic ---
+            const tabButtonsContainer = document.getElementById('tab-buttons');
+            const tabContentPanels = document.getElementById('tab-content-panels');
+
+            tabButtonsContainer.addEventListener('click', function (event) {
+                const clickedButton = event.target.closest('.tab-button');
+                if (!clickedButton) return;
+                
+                const tabId = clickedButton.getAttribute('data-tab');
+                setActiveTab(tabId);
+            });
+            
+            function setActiveTab(tabId) {
+                // Deactivate all buttons
+                tabButtonsContainer.querySelectorAll('.tab-button').forEach(button => {
+                    button.classList.remove('tab-active');
+                    button.classList.add('text-gray-500', 'border-transparent');
+                });
+
+                // Activate the correct button
+                const activeButton = tabButtonsContainer.querySelector(`[data-tab='${tabId}']`);
+                if(activeButton) {
+                    activeButton.classList.add('tab-active');
+                    activeButton.classList.remove('text-gray-500', 'border-transparent');
+                }
+
+                // Hide all content panels
+                tabContentPanels.querySelectorAll('.tab-content').forEach(panel => {
+                    panel.classList.remove('tab-content-active');
+                });
+
+                // Show the target content panel
+                const targetPanel = document.getElementById('tab-content-' + tabId);
+                if (targetPanel) {
+                    targetPanel.classList.add('tab-content-active');
+                }
+            }
+
+
+            // --- Modal and Resource Management Logic ---
+            const modal = document.getElementById('resource-modal');
+            const addResourceBtn = document.getElementById('add-resource-btn');
+            const cancelBtn = document.getElementById('cancel-resource-btn');
+            const resourceForm = document.getElementById('resource-form');
+            const resourceTabSelect = document.getElementById('resource-tab');
+
+            const STORAGE_KEY = 'alWahdaSpeaResources';
+            let resources = {};
+
+            function openModal() {
+                const activeTabButton = document.querySelector('.tab-button.tab-active');
+                if (activeTabButton) {
+                    resourceTabSelect.value = activeTabButton.dataset.tab;
+                }
+                modal.classList.remove('hidden');
+            }
+
+            function closeModal() {
+                modal.classList.add('hidden');
+                resourceForm.reset();
+            }
+            
+            function saveResources() {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(resources));
+            }
+
+            function loadResources() {
+                // Clear any previously rendered dynamic resources to prevent duplication on file save/reload
+                document.querySelectorAll('.resource-items-list').forEach(list => {
+                    list.innerHTML = ''; // Clear the list
+                    const container = list.closest('.added-resources-container');
+                    if (container) {
+                        container.classList.add('hidden');
+                    }
+                });
+
+                const storedResources = localStorage.getItem(STORAGE_KEY);
+                if (storedResources) {
+                    resources = JSON.parse(storedResources);
+                    Object.keys(resources).forEach(tabId => {
+                        if (resources[tabId]) { // Check if tab has resources
+                            resources[tabId].forEach(resource => {
+                                 renderResource(resource, tabId);
+                            });
+                        }
+                    });
+                }
+            }
+
+            function deleteResource(resourceId, tabId) {
+                if (!resources[tabId]) return;
+
+                // Find and remove resource from the data object
+                const resourceIndex = resources[tabId].findIndex(res => res.id === resourceId);
+                if (resourceIndex > -1) {
+                    resources[tabId].splice(resourceIndex, 1);
+                }
+
+                saveResources(); // Update local storage
+
+                // Remove the resource card from the DOM
+                const resourceCard = document.querySelector(`.resource-card[data-resource-id='${resourceId}']`);
+                if (resourceCard) {
+                    resourceCard.remove();
+                }
+
+                // If no resources are left in this tab, hide the container
+                const container = document.querySelector(`#tab-content-${tabId} .added-resources-container`);
+                const targetList = document.querySelector(`#tab-content-${tabId} .resource-items-list`);
+                if (container && targetList && targetList.children.length === 0) {
+                    container.classList.add('hidden');
+                }
+            }
+
+
+            function renderResource(resource, tabId) {
+                const container = document.querySelector(`#tab-content-${tabId} .added-resources-container`);
+                const targetList = document.querySelector(`#tab-content-${tabId} .resource-items-list`);
+                if (!container || !targetList) return;
+
+                // Unhide the container if it's hidden
+                container.classList.remove('hidden');
+
+                const card = document.createElement('div');
+                card.className = 'resource-card p-4 bg-gray-50 rounded-lg border border-gray-200 flex justify-between items-center';
+                card.dataset.resourceId = resource.id;
+                
+                const innerFlex = document.createElement('div');
+                innerFlex.className = 'flex items-center';
+
+                const iconSvg = `<svg class="w-6 h-6 mr-4 text-blue-500 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18.375 12.739l-7.693 7.693a4.5 4.5 0 01-6.364-6.364l10.94-10.94A3.375 3.375 0 1118.375 7.07l-4.147 4.148a2.25 2.25 0 11-3.182-3.182l7.07-7.07" /></svg>`;
+                
+                let contentHtml;
+                if (resource.link) {
+                    contentHtml = `<div class="font-medium text-gray-800"><a href="${resource.link}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${resource.name}</a></div>`;
+                } else {
+                    contentHtml = `<div class="font-medium text-gray-800">${resource.name}</div>`;
+                }
+                
+                innerFlex.innerHTML = iconSvg + contentHtml;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.className = 'text-gray-400 hover:text-red-600 transition-colors duration-200';
+                deleteButton.innerHTML = `<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>`;
+                deleteButton.onclick = () => deleteResource(resource.id, tabId);
+                
+                card.appendChild(innerFlex);
+                card.appendChild(deleteButton);
+                targetList.appendChild(card);
+            }
+
+
+            addResourceBtn.addEventListener('click', openModal);
+            cancelBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            resourceForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const nameInput = document.getElementById('resource-name');
+                const linkInput = document.getElementById('resource-link');
+                const fileInput = document.getElementById('resource-file');
+                const tabId = resourceTabSelect.value;
+                
+                let link = linkInput.value;
+                if(fileInput.files.length > 0) {
+                    link = URL.createObjectURL(fileInput.files[0]);
+                }
+
+                const newResource = {
+                    id: Date.now(), // Unique ID for deletion
+                    name: nameInput.value,
+                    link: link,
+                };
+                
+                if (!resources[tabId]) {
+                    resources[tabId] = [];
+                }
+
+                resources[tabId].push(newResource);
+                
+                saveResources();
+                renderResource(newResource, tabId);
+                setActiveTab(tabId); // Switch to the tab where resource was added
+                closeModal();
+            });
+
+            // --- Initial Load ---
+            loadResources(); // Load saved resources on page start
+        });
+    </script>
+
+</body>
+</html>
+
+
+
